@@ -27,13 +27,21 @@
     color: orangered;                      
 }
 
-/* Adjust Menu colors - Active */
-.navbar .nav > li > a:active, .navbar .nav > li > a:active:first-letter,
-.navbar .nav > li.current-menu-item > a, 
-.navbar .nav > li.current-menu-ancestor > a,
-.navbar .nav > li.current-menu-item > a:first-letter, 
-.navbar .nav > li.current-menu-ancestor > a:first-letter {
-    color: red;
+
+
+/* visited link */
+a:visited {
+    color: whitesmoke;
+}
+
+/* mouse over link */
+a:hover {
+    color: #42e1ed;
+}
+
+/* selected link */
+a:active {
+    color: dodgerblue;
 }
 
 
@@ -46,9 +54,27 @@ body, html, main {
     
 }
 
-body {
-    /*background: linear-gradient(to left, #141E30 , #243B55);*/
-    background-image:url ("bg-1.jpg");
+body {    
+    /* Location of the image */
+  background-image: url(/images/bg-2.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: linear-gradient(to left, #141E30 , #243B55);
 }
 
 .floater{
@@ -61,49 +87,53 @@ body {
     float: none;
 }
 
+.opaque {
+    background-color:rgba(0, 0, 0, 0.3);
+}
+
 #intro{
     font-size:20px;
     color: whitesmoke;
+/*    background: linear-gradient(to left, #141E30 , #243B55);*/
+    min-height: 100%
+    height: 100%; 
 }
 
+#profile_pic{
+    max-width: 60%;
+}
 #skills{
     padding-top: 10mm;
     font-size:25px;
 }
 
 #resume{
-    background: linear-gradient(to left, #FF8008 , #FFC837);
-    font-size:36px;
-	height: 500px;
-
-    
+/*    background: linear-gradient(to left, #FF8008 , #FFC837);*/
+    background: linear-gradient(to left, #000428 , #004e92);
+    font-size:50px;
+    color: whitesmoke;
+	height: 250px;    
 }
 
-.parallax { 
-    /* The image used */
-    background: linear-gradient(to left, #141E30 , #243B55);
-
-    /* Full height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.text_center {
+    text-align: center;
+    vertical-align: middle;
 }
 
-.jumbotron {
-    background: rgb(200, 54, 54); /* This is for ie8 and below */
-    background: rgba(200, 54, 54, 0);
-/*    transform: translate(0%, 50%);
-    position: inherit*/
+.pad{
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
-.vertical-center {
+.v-center {
+    align-content: center;
+   display: flex;
+   align-items: center;
+}
+
+.fill_screen {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
-
   display: flex;
   align-items: center;
 }
