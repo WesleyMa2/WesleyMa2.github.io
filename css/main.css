@@ -114,7 +114,18 @@ body {
     background: linear-gradient(to left, #000428 , #004e92);
     font-size:50px;
     color: whitesmoke;
+	height: 400px;    
+    box-shadow: 0 0 20px black;
+}
+
+#contact{
+/*    background: linear-gradient(to left, #FF8008 , #FFC837);*/
+    background: linear-gradient(to left, #c0c0aa , #1ce);
+    font-size:50px;
+    color: whitesmoke;
+/*
 	height: 250px;    
+*/
     box-shadow: 0 0 20px black;
 }
 
@@ -147,6 +158,15 @@ body {
 .fill_screen {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
+    min-width: 100%;
+    max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.part_screen {
+  min-height: 30%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 30; /* These two lines are counted as one :-)       */
     min-width: 100%;
     max-width: 100%;
   display: flex;
