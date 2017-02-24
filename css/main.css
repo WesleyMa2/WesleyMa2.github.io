@@ -25,20 +25,24 @@
 /* unvisited link */
 a:link {
     color: whitesmoke;
+    text-decoration: none;
 }
 /* visited link */
 a:visited {
     color: whitesmoke;
+    text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
     color: #1ce;
+    text-decoration: none;
 }
 
 /* selected link */
 a:active {
     color: #0575E6;
+    text-decoration: none;
 }
 
 
