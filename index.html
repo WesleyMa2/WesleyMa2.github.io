@@ -3,11 +3,16 @@
     <head>
         <title>Wesley Ma</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
         <link rel="stylesheet" href="/css/main.css" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Lato|Quicksand|Source+Sans+Pro" rel="stylesheet">
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">       
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="/js/animations.js"></script>
     </head>
     
     <body>
@@ -38,11 +43,11 @@
         <div class="container-fluid fill_screen" id="intro">
             <div class="container opaque">
                 <!--Profile Pic-->
-                <div class="col-md-offset-2 col-md-4 pad vcenter">
+                <div class="col-md-offset-1 col-md-5 pad vcenter hidden-sm hidden-xs">
                     <img src="/images/headshot.jpg" class="img-responsive img-circle center-block" id="profile_pic" alt="Thats Me!">
                 </div>
                 <!--About Me-->
-                <div class="col-md-4 vcenter">
+                <div class="col-md-5 vcenter">
                     <h1>Hello!</h1>
                     <p>Welcome to my personal website that I created with HTML and CSS.<br><br>I am a student from Ottawa, Canada, currently studying computer science at the University of Toronto .<br><br> As a first year student, I am by no means an experienced developer, but I am learning something new everyday! </p>
                 </div>
@@ -51,11 +56,11 @@
                     <div class="col-xs-12">
                         <ul class="list-inline text-center ">
                             <li>HTML/CSS</li>
-                            <li>•</li>
+                            <li class="hidden-sm hidden-xs">•</li>
                             <li>PYTHON</li>
-                            <li>•</li>
+                            <li class="hidden-sm hidden-xs">•</li>
                             <li>C++</li>
-                            <li>•</li>
+                            <li class="hidden-sm hidden-xs">•</li>
                             <li>JAVA</li>
                         </ul>
                     </div>
@@ -65,8 +70,8 @@
 
         <!--RESUME-->
         <div class="container-fluid v-center" id = "resume">
-            <div class="col-md-offset-3 col-md-6">
-                <p class="text_center">Download my resume here:
+            <div class="col-md-offset-2 col-md-8">
+                <p class="text_center fade_in">Download my resume here:
                     <a href="/downloads/Resume.pdf">
                       <i class="fa fa-file-text" aria-hidden="true"></i>
                     </a>
@@ -81,12 +86,12 @@
                 <!--Title-->
                 <div class="row">
                     <div class="col-md-offset-2 col-md-4">
-                        <h1>Projects</h1>
+                        <h1 class="fade_in">Projects</h1>
                     </div>
                 </div>
                 <!--Info Menu 1-->
                 <div class="row pad">
-                    <div class="col-md-offset-2 col-md-4">
+                    <div class="col-md-offset-2 col-md-4 fade_in">
                         <div class="panel-group" id="accordion">
                           <div class="panel panel-default">
                             <div class="panel-heading">
@@ -124,7 +129,7 @@
                         </div>
                     </div>
                     <!--Info Menu 2-->
-                    <div class="col-md-4">
+                    <div class="col-md-4 fade_in">
                         <div class="panel-group" id="accordion2">
                           <div class="panel panel-default">
                             <div class="panel-heading">
@@ -165,7 +170,7 @@
                 <!--Github Link-->
                 <div class="row pad">
                     <div class="col-md-offset-2 col-md-4">
-                        <p class="text_center">Check out more (less) on my 
+                        <p class="text_center fade_in">Check out more (less) on my 
                             <a href="https://github.com/WesleyMa2">
                                 Github!
                               <i class="fa fa-github" aria-hidden="true"></i>
@@ -177,9 +182,9 @@
         </div>
         
         <!--CONTACT ME-->
-        <div class="container-fluid v-center" id = "contact">
-            <div class="col-md-offset-3 col-md-6">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeqCavT2ooQ97X6Bp0YEYpKhRQc3UiDVAqlo3Vz1MCm2Qheyg/viewform?embedded=true" width="760" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <div class="container-fluid" id = "contact">
+            <div class="col-md-offset-3 col-md-6 pad ">
+                <iframe class="hcenter" src="https://docs.google.com/forms/d/e/1FAIpQLSeqCavT2ooQ97X6Bp0YEYpKhRQc3UiDVAqlo3Vz1MCm2Qheyg/viewform?embedded=true" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </div>
         </div>
         
@@ -187,7 +192,5 @@
         <div class="container-fluid part_screen">
         </div>
         
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
