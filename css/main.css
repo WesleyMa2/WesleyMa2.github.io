@@ -141,13 +141,12 @@ body {
     font-size: 16px
 }
 
-
 #contact {
     /*    background: linear-gradient(to left, #FF8008 , #FFC837);*/
     background: linear-gradient(to left, #c0c0aa, #1ce);
     font-size: 50px;
     color: whitesmoke;
-/*    height: 600px;*/
+    /*    height: 600px;*/
     box-shadow: 0 0 20px black;
 }
 
