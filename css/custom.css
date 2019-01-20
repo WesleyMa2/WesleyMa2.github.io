@@ -3,11 +3,13 @@
 .header {
   margin-top: 6rem;
   text-align: center; }
-.value-prop {
-  margin-top: 1rem; }
-.value-props {
+.links-props {
   margin-top: 4rem;
   margin-bottom: 4rem; }
+.links-prop > a{
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
 .docs-header {
   text-transform: uppercase;
   font-size: 2rem;
@@ -17,12 +19,8 @@
   border-top: 1px solid #eee;
   padding: 4rem 0;
   margin-bottom: 0;}
-.value-img {
-  display: block;
-  text-align: center;
-  margin: 2.5rem auto 0; }
-.example-grid .column,
-.example-grid .columns {
+.project-grid .column,
+.project-grid .columns {
   background: #EEE;
   text-align: center;
   border-radius: 4px;
@@ -33,59 +31,58 @@
   margin-bottom: .75rem;
   font-weight: 600;
   letter-spacing: .1rem; }
-.docs-example .row,
-.docs-example.row,
-.docs-example form {
+.docs-project .row,
+.docs-project.row,
+.docs-project form {
   margin-bottom: 0; }
-.docs-example h1,
-.docs-example h2,
-.docs-example h3,
-.docs-example h4,
-.docs-example h5,
-.docs-example h6 {
+.docs-project h1,
+.docs-project h2,
+.docs-project h3,
+.docs-project h4,
+.docs-project h5,
+.docs-project h6 {
   margin-bottom: 1rem; }
 .heading-font-size {
   font-size: 1.2rem;
   color: #999;
   letter-spacing: normal; }
-.code-example {
+.code-project {
   margin-top: 1.5rem;
   margin-bottom: 0; }
-.code-example-body {
+.code-project-body {
   white-space: pre;
   word-wrap: break-word }
-.example {
+.project {
   position: relative; 
   margin-top: 4rem; }
-.example-header {
+.project-header {
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: .5rem; }
-.example-description {
+.project-description {
   margin-bottom: 1.5rem; }
-.example-screenshot-wrapper {
+.project-screenshot-wrapper {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: block;
   position: relative;
   overflow: hidden;
   border-radius: 6px;
   border: 1px solid #eee;
   height: 250px; }
-.example-screenshot {
+.project-screenshot {
   width: 100%;
-  height: auto; }
-.example-screenshot.coming-soon {
-  width: auto;
-  position: absolute;
-  background: #eee;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  left: 5px; }
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin:auto; }
 .navbar {
   display: none; }
 #profile {
-  margin-top: 1rem;
-  margin-right: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
   border-radius: 50%;
   width: 10rem;
   height: auto;
@@ -93,54 +90,55 @@
 .experience-logo {
   margin-top: 1rem;
   margin-right: 1rem;
+  display: none;
   width: 10rem;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-/* #particles-js canvas {
-    display: block;
-    vertical-align: bottom;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-    transition: opacity .8s ease, transform 1.4s ease
-} */
 #particles-js {
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: -10;
     left: 0;
-    top: 0;
+    top: 0; }
+.experience-company {
+  margin-bottom: 0rem; }
+.experience-subheader {
+  display: flex;
+  flex-direction: row;
+  font-style: italic;
+  justify-content: space-between; }
+.experience-subheader > h6 {
+  margin-bottom: 1rem;
 }
+.experience-info {
+  margin-left: 1rem; }
+
 /* Larger than phone */
 @media (min-width: 550px) {
   .header {
     margin-top: 18rem; }
-  .value-props {
+  .links-props {
     margin-top: 9rem;
     margin-bottom: 7rem; }
-  .value-img {
+  .links-img {
     margin-bottom: 1rem; }
-  .example-grid .column,
-  .example-grid .columns {
+  .project-grid .column,
+  .project-grid .columns {
     margin-bottom: 1.5rem; }
   .docs-section {
     padding: 6rem 8rem; }
-  .example-send-yourself-copy {
-    float: right;
-    margin-top: 12px; }
-  .example-screenshot-wrapper {
+  .project-screenshot-wrapper {
     position: absolute;
     width: 48%;
-    height: 100%;
+    height: 70%;
     left: 0;
     max-height: none; }
   #profile {
-      width: 13rem; }
+    width: 13rem; }
   .experience-logo {
-      width: 13rem; }
+    display: block;
+    width: 10rem; }
 }
 
 /* Larger than tablet */
